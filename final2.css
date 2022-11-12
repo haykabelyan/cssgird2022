@@ -1,0 +1,144 @@
+html, body{
+    height: 100vh;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.wrapper{
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 1fr max-content;
+    grid-template-areas: 
+    "header"
+    "content"
+    "footer";
+}
+
+.header{
+    grid-area: header;
+    box-shadow: 0 2px 2px 0px rgba(00,00,00, .5);
+}
+
+
+.container{
+    margin: 0 auto;
+    width: 95%;
+    max-width: 960px;
+}
+
+.header__container{
+    display: grid;
+    grid-template: "left right" 1fr / 1fr 1fr;
+    align-items: center;
+}
+
+.header__left{
+    grid-area: left;
+}
+
+.header__right{
+    grid-area: right;
+    justify-self: end;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+}
+
+.user__avatar{
+    background: #ccc;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+
+/*====== CONTENTS ======*/
+
+.content{
+    grid-area: content;
+    background: #f6f6f6;
+}
+
+.content__container{
+    display: grid;
+    grid-template:
+    "sidebar maincontent" 1fr
+    1fr 3.5fr;
+}
+
+.sidebar{
+    grid-area: sidebar;
+}
+
+.maincontent{
+    grid-area: maincontent;
+}
+
+.user-info{
+    display: grid;
+    grid-template: 
+    "avatar text" 1fr / 1fr 1.2fr;
+    grid-gap: 0px 10px;
+}
+
+.user-info-avatar{
+    grid-area: avatar;
+    justify-self: center;
+}
+
+.avatar{
+    width: 200px;
+    height: 220px;
+    background: #ccc;
+    border-radius: 50%;
+}
+
+
+/*====== CONTENTS ======*/
+
+.footer{
+    grid-area: footer;
+    background: #414141;
+}
+
+.footer__container{
+   
+    display: grid;
+    grid-template: 
+        "left right" 1fr
+        / 1fr 1fr;
+    ;
+    align-items: center;
+}
+.footer__left{
+    grid-area: left;
+}
+
+.footer__right{
+    grid-area: right;
+    justify-self: right;
+}
+
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.socials_link{
+    text-decoration: none;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #000;
+}

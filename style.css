@@ -1,0 +1,33 @@
+.item{
+    background-color: brown;
+    border: 1px solid;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: 50px 1fr 50px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.item-5{
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+
+
+
+
+/*
+.item-8{ // kereva vortex heto e galis
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+.item-8{ // chi ereva vortev 5 cackum e
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+*/

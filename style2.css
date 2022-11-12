@@ -1,0 +1,14 @@
+.item{
+    background-color: brown;
+    border: 1px solid;
+}
+
+.container{
+    display: grid;
+    /* grid-template-columns: 25% minmax(200px, 25%) 25% 25%; */
+    /* grid-template-columns: 1fr minmax(200px, 25%) 1fr 1fr; */
+     /* grid-template-columns: 1fr min-content 1fr 1fr; */
+     /* grid-template-columns: 1fr min-content 1fr 1fr; */
+     grid-template-columns: 1fr minmax(min-content, 25%) 1fr 1fr;
+}
+
